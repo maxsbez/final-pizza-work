@@ -113,5 +113,5 @@ $(document).ready(()=>{
 // console.log(string)
 
 // alert( isNaN("four") );               // displays true
-alert( isNaN([23]) );              // displays true
+// alert( isNaN([23]) );              // displays true
 // alert( isNaN(NaN) );     
