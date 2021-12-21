@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href= "pizza.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul class="nav">
+                    <li class="nav"><a href="index.html">Home</a></li> 
+                    <li class="nav"><a href="menu.html">Menu</a></li>
+                   
+                <li class="nav"><a href="about.html">About</a></li>
+                    <li class="nav"><a href="contact.html">Contact</a></li>
+                    <div class="navbar">
+    </header>
+    <div  id="about">
+        <h1 style="padding-top:80px">About Us</h1>
+        <!-- About paragraph first, then reviews, then map, then hours of operation -->
+        <div class="aboutParagraph">
+           Maxsbez Pizza shop was founded on the idea that pizza is the source of all happiness.<br>
+           we love what we do and who we are, and we hope it shows in every slice you have.<br>
+            <br>
+            <hr>
+            <h4 style="text-align:center">Customer Reviews</h4>
+            <i>"i love how the pizaa taste, overall great service"<br>-Amanda&eacute;</i><br>
+           
+            <br>
+            <i>"I won the lottery after eating here! Coincidence? I think not!"<br>-kelly</i><br>
+            <br>
+            <i>"This pizza cured my diabetes."<br>-Anonymous</i><br>
+            <br>
+            <p style="font-weight: bold">Can you find us? (hint: drag the map towards the bottom right)</p>
+        </div>
+        <div id="map" class="googleMapAbout">
+            <script>
+                function myMap() {
+
+                    var mapOptions = {
+                        zoom: 13, scrollwheel: false, draggable: true,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                    myCenter = new google.maps.LatLng(38.903286, -77.064832) //location
+                    //marker setting works, but map won't center properly :(
+                    var marker = new google.maps.Marker({
+                        position: myCenter,
+                        map:map
+                    });
+                    map.setCenter(myCenter);
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyrWKe3_0hitaQES4mPstS_786npKv0g0&callback=myMap"></script>
+        </div>
+        <div>
+            <h2 style="text-align:left">Hours of Operation</h2>
+            <div class="aboutHours">
+                <table>
+                <tr><th>Monday</th><td>10am - 10pm</td></tr>
+                <tr><th>Tuesday</th><td>10am - 10pm</td></tr>
+                <tr><th>Wednesday</th><td>10am - 10pm</td></tr>
+                <tr><th>Thursday</th><td>10am - 10pm</td></tr>
+                <tr><th>Friday</th><td>10am - 12am</td></tr>
+                <tr><th>Saturday</th><td>10am - 2am</td></tr>
+                <tr><th>Sunday</th><td><i>Closed</i></td></tr>
+                </table>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <h2 style="text-align: center;">Address</h2>
+    256 lecister street<br>
+    waterloo Ontario canada<br>
+    N2B 3V9<br>
+    Telephone: 519-728-2384
+    <script src="pizza.js"></script>
+
+    <footer>
+            <div>
+                <ul class="nav">
+                    <li class="nav"><a href="terms.html" id="ftrTerms">Terms</a></li>
+                </ul>
+            </div>
+            
+        </footer>
+</body>
+</html>
