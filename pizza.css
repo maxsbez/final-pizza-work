@@ -277,22 +277,22 @@ i {
     overflow:auto;
     
   }
-@media only screen and (max-width:700px){
-  bgimg {
+@media only screen and (max-width:767px){
+  .bgimg {
     background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("https://media.timeout.com/images/100633783/image.jpg"), center;
-    min-height: 45%;
-    min-height: 45%;
+    background-size:cover;
+    background-image: url("maxwellresponsive.jpg");
+    min-height: 85%;
+    
 
 } 
 .imgText {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #e6e6e6;
-  font-size: 270%;
+  font-size: 300%;
   font-family: sans-serif;
 } 
 
